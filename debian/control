@@ -17,9 +17,7 @@ Homepage: https://www.rarlab.com/
 
 Package: unrar
 Architecture: any
-Depends: ${shlibs:Depends},
-         ${misc:Depends}
-Pre-Depends: ${misc:Pre-Depends}
+Depends: ${shlibs:Depends}
 Description: Unarchiver for .rar files (non-free version)
  Unrar can extract files from .rar archives. If you want to create .rar
  archives, install package rar.
@@ -28,9 +26,7 @@ Package: libunrar5t64
 Architecture: any
 Multi-Arch: same
 Section: non-free/libs
-Depends: ${misc:Depends},
-         ${shlibs:Depends}
-Pre-Depends: ${misc:Pre-Depends}
+Depends: ${shlibs:Depends}
 Breaks: libunrar5 (<< ${source:Version})
 Provides: ${t64:Provides}
 Replaces: libunrar5
@@ -42,10 +38,9 @@ Package: libunrar-dev
 Architecture: any
 Multi-Arch: same
 Section: non-free/libdevel
-Depends: ${misc:Depends},
-         libunrar5t64 (= ${binary:Version}),
-         libunrar-headers (= ${source:Version})
-Pre-Depends: ${misc:Pre-Depends}
+Depends:
+  libunrar5t64 (= ${binary:Version}),
+  libunrar-headers (= ${source:Version})
 Description: Unarchiver for .rar files (non-free version) - development files
  This package contains architecture dependent files for development.
  Install libunrar-headers package for architecture independent header files.
@@ -54,8 +49,6 @@ Package: libunrar-headers
 Architecture: all
 Multi-Arch: foreign
 Section: non-free/libdevel
-Depends: ${misc:Depends}
-Pre-Depends: ${misc:Pre-Depends}
 Description: Unarchiver for .rar files (non-free version) - development header files
  This package contains the header files for the libunrar library.
  This package have architecture independent files for development.
