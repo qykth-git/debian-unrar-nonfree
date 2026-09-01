@@ -11,3 +11,4 @@
 0011-Add-visibility-attribute-to-reduce-export-table.patch
 0012-Add-PHONY-target.patch
 0013-Avoid-internal-compiler-error-on-i386.patch
+0014-CVE-2026-14191.patch
