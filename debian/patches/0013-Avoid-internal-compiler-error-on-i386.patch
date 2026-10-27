@@ -38,10 +38,10 @@ The bug is not reproducible, so it is likely a hardware or OS problem.
  1 file changed, 1 insertion(+), 1 deletion(-)
 
 diff --git a/os.hpp b/os.hpp
-index 2434fce..2bd8121 100644
+index cc83a9c..2d675b9 100644
 --- a/os.hpp
 +++ b/os.hpp
-@@ -150,7 +150,7 @@
+@@ -156,7 +156,7 @@
  #include <locale.h>
  
  #ifdef __GNUC__
